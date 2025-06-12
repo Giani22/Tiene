@@ -111,7 +111,7 @@ public class Main2 {
 					System.out.println("Precio: " + arreglo[i].getPrecio());
 					System.out.println("Marca: " + arreglo[i].getModelo());
 				}else {
-					System.out.println("Posicio" + i + "esta vacia");
+					System.out.println("Posicio " + i + "esta vacia");
 				}
 				}
 			}
@@ -124,6 +124,7 @@ public class Main2 {
 			            if (arreglo[i] != null && arreglo[i].getId() == id) {
 			                arreglo[i] = null;
 			                System.out.println("Producto eliminado.");
+					      return;
 		}
 			            }
 		System.out.println("Algo salio mal:(");	 
@@ -144,7 +145,7 @@ public class Main2 {
 	                arreglo[i].setPrecio(nuevoPrecio);
 	              
 	                System.out.println("Producto modificado.");
-			break;
+			  return;
 		}
 	           
 	            }
@@ -220,7 +221,7 @@ public class Main2 {
 					System.out.println("Precio: " + arreglo1[i].getPrecio());
 					System.out.println("Talla: " + arreglo1[i].getTalla());
 				}else {
-					System.out.println("Posicio" + i + "esta vacia");
+					System.out.println("Posicio " + i + "esta vacia");
 				}
 				}
 		   }
@@ -324,7 +325,7 @@ public class Main2 {
 						System.out.println("Precio: " + arreglo2[i].getPrecio());
 						System.out.println("Vencimiento: " + arreglo2[i].getVencimiento());
 					}else {
-						System.out.println("Posicio" + i + "esta vacia");
+						System.out.println("Posicio " + i + "esta vacia");
 					}
 					}
 			 }
