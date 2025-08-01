@@ -14,8 +14,8 @@ public class ventana extends JFrame{
 	
 	public ventana() {
 		
-		   this.setTitle("Ventana");
-	       this.setSize(300, 300);
+		   this.setTitle("Registrar Usuario");
+	       this.setSize(300, 400);
 	       this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	       this.setLocationRelativeTo(null);
 	       this.setLayout(new GridLayout(2,1));
