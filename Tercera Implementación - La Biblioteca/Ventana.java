@@ -8,7 +8,7 @@ public class Ventana extends JFrame {
 
     private JTextField txtISBN, txtAutor, txtTitulo;
     private JLabel lblMensaje;
-    private JTextArea areaListado;
+    private JTextArea Listado;
 
     private Libro[] libros = new Libro[10];
 
@@ -41,9 +41,9 @@ public class Ventana extends JFrame {
         add(panelDatos, BorderLayout.NORTH);
 
         //Listado
-        areaListado = new JTextArea();
-        areaListado.setEditable(false);
-        JScrollPane scroll = new JScrollPane(areaListado);
+        Listado = new JTextArea();
+        Listado.setEditable(false);
+        JScrollPane scroll = new JScrollPane(Listado);
         add(scroll, BorderLayout.CENTER);
 
         //Botones
@@ -90,10 +90,10 @@ public class Ventana extends JFrame {
         //Listar
         btnListar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                areaListado.setText("LIBROS\n");
+                Listado.setText("LIBROS\n");
                 for (Libro libro : libros) {
                     if (libro != null) {
-                        areaListado.append("ISBN: " + libro.isbn +
+                        Listado.append("ISBN: " + libro.isbn +
                                 ", Autor: " + libro.autor +
                                 ", Título: " + libro.titulo + "\n");
                     }
@@ -101,5 +101,6 @@ public class Ventana extends JFrame {
             }
         });
     }
+
 
 }
